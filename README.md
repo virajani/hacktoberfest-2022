@@ -4,6 +4,9 @@
 ## What is Hacktoberfest?
 <p>Hacktoberfest is digitalocean’s annual event that encourages people to contribute to open source throughout october. Much of modern tech infrastructure—including some of digitalocean’s own products—relies on open-source projects built and maintained by passionate people who often don’t have the staff or budgets to do much more than keep the project alive. Hacktoberfest is all about giving back to those projects, sharpening skills, and celebrating all things open source, especially the people that make open source so special.</p>
 
+## Watch on YouTube (In Sinhala Language)
+<a href="https://www.youtube.com/watch?v=9UXdr4pJyh4"><img src="https://user-images.githubusercontent.com/54996800/193015811-02f5678b-ca69-4878-936f-85aaf1042daf.png" width="100"/></a>
+
 ## Values
 - Everyone is welcome
 - Quantity is fun, quality is key
