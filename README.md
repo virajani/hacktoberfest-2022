@@ -1,7 +1,7 @@
 # Hacktoberfest 2022
 ![image](https://user-images.githubusercontent.com/54996800/192564253-f3373ecc-bc86-4c13-a0bd-551b9c23f788.png)
 
-[![GitHub issues](https://img.shields.io/github/issues/dasundev/hacktoberfest-2022?style=for-the-badge&color=success)](https://github.com/dasundev/hacktoberfest-2022/issues)
+[![GitHub issues](https://img.shields.io/github/issues/dasundev/hacktoberfest-2022?style=for-the-badge&color=important)](https://github.com/dasundev/hacktoberfest-2022/issues)
 [![GitHub forks](https://img.shields.io/github/forks/dasundev/hacktoberfest-2022?style=for-the-badge&color=blue)](https://github.com/dasundev/hacktoberfest-2022/network)
 [![GitHub stars](https://img.shields.io/github/stars/dasundev/hacktoberfest-2022?style=for-the-badge&color=yellow)](https://github.com/dasundev/hacktoberfest-2022/stargazers)
 
