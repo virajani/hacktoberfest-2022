@@ -12,4 +12,10 @@ function findLargestNum($array){
 
 findLargestNum([54,23,65,76,12,4]);
 
+function sumOfNum($array){
+    return print_r(array_sum($array));
+}
+
+sumOfNum([54,23,65,76,12,4]);
+
 ?>
