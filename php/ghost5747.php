@@ -6,4 +6,10 @@ function removeDuplicates($array){
 
 print_r(removeDuplicates([1,4,5,4,2,5,7,3]));
 
+function findLargest($array){
+    return print_r(max($array));
+}
+
+findLargest([1,4,5,4,2,5,7,3]);
+
 ?>
