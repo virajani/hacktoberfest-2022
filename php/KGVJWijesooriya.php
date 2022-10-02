@@ -18,4 +18,15 @@ function sumOfNum($array){
 
 sumOfNum([54,23,65,76,12,4]);
 
+function FindoddOrEven($num){
+    if($num % 2 == 0){
+        print_r("Even number");
+    }else{
+        print_r("Odd number");
+    }
+}
+
+FindoddOrEven(21);
+
+
 ?>
