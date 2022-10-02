@@ -12,4 +12,11 @@ function findLargest($array){
 
 findLargest([1,4,5,4,2,5,7,3]);
 
+
+function sumOfNumbers($array){
+    return print_r(array_sum($array));
+}
+
+sumOfNumbers([1,4,5,4,2,5,7,3]);
+
 ?>
