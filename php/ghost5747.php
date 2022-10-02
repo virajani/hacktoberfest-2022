@@ -19,4 +19,14 @@ function sumOfNumbers($array){
 
 sumOfNumbers([1,4,5,4,2,5,7,3]);
 
+function oddOrEven($num){
+    if($num % 2 == 0){
+        print_r("Odd number");
+    }else{
+        print_r("Even number");
+    }
+}
+
+oddOrEven(2);
+
 ?>
