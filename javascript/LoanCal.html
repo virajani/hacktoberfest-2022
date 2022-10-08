@@ -1,0 +1,161 @@
+<html>
+<head><title>Cash Back Loan Calculator</title></head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<div class="p-3 mb-2 bg-success text-white">
+<h2><b>Cash Back Loan Calculator</b>
+<img src="https://nowskills.co.uk/wp-content/uploads/2018/07/money-PNG-e1532606569895.png" width="8%" height="auto" align="right" /></h2>
+</div><br>
+<div class="form-row">
+<div class="form-group mx-sm-3 mb-2">
+<label><b>Loan Amount:</b></label>
+</div>
+<div class="form-group mx-sm-3 mb-2">
+<input type="text" class="form-control" id="loanamount" value="0"><br>
+</div> </div>
+
+<div class="form-row">
+<div class="form-group mx-sm-3 mb-2">
+<label><b>Loan Term:</b></label><br>
+</div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+<div class="form-group mx-sm-3 mb-2">
+<label>Year:</label>
+
+<input type="text" class="form-control" id="year" placeholder="Year" value="0">&nbsp; &nbsp;
+</div>
+<div class="form-group mx-sm-3 mb-2">
+<label>Month:</label><input type="text" class="form-control" id="month" placeholder="Month" value="0">
+</div>
+<br>
+</div>
+
+<div class="form-row">
+<div class="form-group mx-sm-3 mb-2">
+<label><b>Interest Rate:<br>%</b></label>
+</div>
+<div class="form-group mx-sm-3 mb-2">
+<input type="text" class="form-control" id="interestrate" />
+</div>
+
+</div>
+<br><br>
+<div class="form-row">
+<div class="form-group mx-sm-3 mb-2">
+<button type="button" class="btn btn-success" onclick="interestCal()">Calculate</button>
+&nbsp; 
+<button type="button" class="btn btn-outline-danger" onclick="clearTable()">Clear</button>
+
+</div>
+</div>
+</div>
+
+<div class="p-3 mb-2 bg-success text-white"></div>
+<table class="table table-striped" id="tblLoan">
+
+<th>Month</th>
+<th>Monthly Amount</th>
+<th>Interest Amount</th>
+<th>Total Amount</th>
+<th>Outstanding Balance</th>
+
+
+<tr id="tblRow">
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+</table>
+
+
+
+
+
+<script type = "text/JavaScript">
+	var count = 0;
+function interestCal()
+	{
+		
+		
+		
+		
+		
+		var monthvalue=0;
+		var year = parseInt(document.getElementById("year").value);
+		var months = parseInt(document.getElementById("month").value);
+		var yearmonths = year*12;
+		
+		var totalmonths = yearmonths + months;
+		var capital = parseFloat(document.getElementById("loanamount").value);
+		var loanamount = parseFloat(document.getElementById("loanamount").value);
+		var monthlyamount = loanamount/totalmonths;
+		var tempmonthlyamount = monthlyamount;
+		
+		
+		var interestrate = parseFloat(document.getElementById("interestrate").value);
+		
+		while(monthvalue != totalmonths)
+		{
+			monthvalue++;
+			var interestamount = capital * (interestrate/100);
+			var totalamount = monthlyamount + interestamount;
+			
+			var table = document.getElementById("tblLoan");
+			var row = table.insertRow(-1);
+			var cell1 = row.insertCell(0);
+			var cell2 = row.insertCell(1);
+			var cell3 = row.insertCell(2);
+			var cell4 = row.insertCell(3);
+			var cell5 = row.insertCell(4);
+			cell1.innerHTML = monthvalue;
+			cell2.innerHTML = monthlyamount.toFixed(2);
+			cell3.innerHTML = interestamount.toFixed(2);
+			cell4.innerHTML = totalamount.toFixed(2);
+			cell5.innerHTML = capital.toFixed(2);
+			
+			
+
+			capital = capital - monthlyamount;
+
+			
+		}
+		
+					
+	}
+</script>
+
+<script>
+function clearTable()
+		{
+			var table = document.getElementById("tblLoan");
+			while(table.rows.length>0)
+			{
+				table.deleteRow(1);
+				
+			}
+			
+			
+		}
+		
+</script>
+
+
+
+
+<div class="p-3 mb-2 bg-secondary text-white">
+ 
+  <center>© Pasan Yasara</center>
+ 
+ </div> 
+
+</footer>
+</body>
+</html>
